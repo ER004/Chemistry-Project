@@ -27,12 +27,12 @@ class WaterNode
     velocity.mult(speed);
     
     //check for horizontal wall collisions
-    if(location.y < yMax + 2 && location.y > yMax - 2 || location.y < yMin + 2 && location.y > yMin - 2)
+    if(location.y < yMin || location.y > yMax)
     {
       velocity.y = velocity.y * -1;
     }
     //check for vertical wall collisions
-    if(location.x < xMax + 2 && location.x > xMax - 2 || location.x < xMin + 2 && location.x > xMin - 2)
+    if(location.x < xMin || location.x > xMax)
     {
       velocity.x = velocity.x * -1;
     }

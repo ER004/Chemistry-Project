@@ -25,7 +25,7 @@ void setup()
   .setPosition(width/2 - can.x/2, 65)
   .setSize(int(can.x) - 100, 20)
   .setRange(1,tempMax)
-  .setValue(400)
+  .setValue(tempMax)
   ;
   
   airSlider = cp5.addSlider("Air Particles");

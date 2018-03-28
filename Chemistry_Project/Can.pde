@@ -39,13 +39,13 @@ class Can
   
   void crush()
   {
-    y = y/2;
+    y = y/3.5;
     x = x/2;
   }
   
   void unCrush()
   {
-    y = y*2;
+    y = y*3.5;
     x = x*2;
   }
   
